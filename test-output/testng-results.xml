@@ -1,76 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="3" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="83915" started-at="2019-04-28T17:55:35Z" finished-at="2019-04-28T17:56:59Z">
+  <suite name="Default suite" duration-ms="29345" started-at="2019-05-05T15:36:49Z" finished-at="2019-05-05T15:37:18Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="83915" started-at="2019-04-28T17:55:35Z" finished-at="2019-04-28T17:56:59Z">
-      <class name="com.enhanzed.qa.testcases.loginpagetest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.enhanzed.qa.testcases.loginpagetest@3bfdc050]" name="setup" is-config="true" duration-ms="35267" started-at="2019-04-28T17:55:35Z" finished-at="2019-04-28T17:56:11Z">
+    <test name="Default test" duration-ms="29345" started-at="2019-05-05T15:36:49Z" finished-at="2019-05-05T15:37:18Z">
+      <class name="com.enhanzed.qa.testcases.Topicdetailtest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.enhanzed.qa.testcases.Topicdetailtest@6093dd95]" name="setup" is-config="true" duration-ms="9969" started-at="2019-05-05T15:36:49Z" finished-at="2019-05-05T15:36:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="logintesttitle()[pri:1, instance:com.enhanzed.qa.testcases.loginpagetest@3bfdc050]" name="logintesttitle" duration-ms="5702" started-at="2019-04-28T17:56:11Z" finished-at="2019-04-28T17:56:16Z">
+        <test-method status="PASS" signature="checktopicpageattributes()[pri:1, instance:com.enhanzed.qa.testcases.Topicdetailtest@6093dd95]" name="checktopicpageattributes" duration-ms="19328" started-at="2019-05-05T15:36:59Z" finished-at="2019-05-05T15:37:18Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- logintesttitle -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.enhanzed.qa.testcases.loginpagetest@3bfdc050]" name="setup" is-config="true" duration-ms="25183" started-at="2019-04-28T17:56:16Z" finished-at="2019-04-28T17:56:41Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="FAIL" signature="imagetest()[pri:2, instance:com.enhanzed.qa.testcases.loginpagetest@3bfdc050]" name="imagetest" duration-ms="3992" started-at="2019-04-28T17:56:41Z" finished-at="2019-04-28T17:56:45Z">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:96)
-at org.testng.Assert.failNotEquals(Assert.java:776)
-at org.testng.Assert.assertTrue(Assert.java:44)
-at org.testng.Assert.assertTrue(Assert.java:54)
-at com.enhanzed.qa.testcases.loginpagetest.imagetest(loginpagetest.java:34)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- imagetest -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.enhanzed.qa.testcases.loginpagetest@3bfdc050]" name="setup" is-config="true" duration-ms="10984" started-at="2019-04-28T17:56:46Z" finished-at="2019-04-28T17:56:56Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="logintest()[pri:3, instance:com.enhanzed.qa.testcases.loginpagetest@3bfdc050]" name="logintest" duration-ms="2683" started-at="2019-04-28T17:56:56Z" finished-at="2019-04-28T17:56:59Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logintest -->
-      </class> <!-- com.enhanzed.qa.testcases.loginpagetest -->
+        </test-method> <!-- checktopicpageattributes -->
+      </class> <!-- com.enhanzed.qa.testcases.Topicdetailtest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

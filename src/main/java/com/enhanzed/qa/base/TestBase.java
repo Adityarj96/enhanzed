@@ -1,10 +1,14 @@
 package com.enhanzed.qa.base;
 
+import java.io.BufferedWriter;
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Properties;
 
+import org.openqa.selenium.Cookie;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -46,10 +50,42 @@ public class TestBase {
 			ngDriver = new NgWebDriver((JavascriptExecutor) driver);
 			ngDriver.waitForAngularRequestsToFinish();
 		}
-		driver.manage().deleteAllCookies();
+		//driver.manage().deleteAllCookies();
+		
+		
 		driver.get(prop.getProperty("url"));
 	}
+
+  public void cookie()
+  {
+	
+	 File file = new File("Cookies.data");						
+     try		
+     {	  
+         // Delete old file if exists
+			file.delete();		
+         file.createNewFile();			
+         FileWriter fileWrite = new FileWriter(file);							
+         BufferedWriter Bwrite = new BufferedWriter(fileWrite);							
+         // loop for getting the cookie information 		
+         	
+         // loop for getting the cookie information 		
+         for(Cookie ck : driver.manage().getCookies())							
+         {			
+             Bwrite.write((ck.getName()+";"+ck.getValue()+";"+ck.getDomain()+";"+ck.getPath()+";"+ck.getExpiry()+";"+ck.isSecure()));																									
+             Bwrite.newLine();             
+         }			
+         Bwrite.close();			
+         fileWrite.close();	
+         
+     }
+     catch(Exception ex)					
+     {		
+         ex.printStackTrace();			
+     }		
+ }		
+}
 	
 	
 
-}
+
